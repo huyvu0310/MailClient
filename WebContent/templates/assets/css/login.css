@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+h4, h5, h6,
+h1, h2, h3 {margin: 0;}
+ul, ol {margin: 0;}
+p {margin: 0;}
+
+html, body{
+	font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    overflow-x: hidden;
+    background: url(../images/61.jpg) no-repeat 0px 0px;
+	background-size:cover;
+}
+.form-main h2 {
+	background: #FD800F;
+	color: #fff;
+    font-size: 29px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+	text-align: center;
+	padding-top: 20px;	
+}
+.form-main {
+
+    width: 30%;
+     margin:8em auto;
+       border-radius: 8px;
+    box-shadow: 6px 6px 4px #BBB;
+    -webkit-transition: 3s all;
+}
+.form-main form{
+	padding-top: 20px;	
+	padding-bottom: 20px;	
+	 background:rgba(255,255,255, 5);
+}
+.form-group {
+	font-size:17px;
+    width: 100%;
+}
+.form-group label {
+}
+form input[type="text"],form input[type="password"]{
+	width:95%;
+}
+form input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #58A808;
+    color: white;
+    border: none;
+    outline: none;
+	display: table;
+    cursor: pointer;
+    margin: auto;
+    
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+form input[type="submit"]:hover {
+	background:#FD800F;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
