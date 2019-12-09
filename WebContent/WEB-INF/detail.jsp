@@ -51,6 +51,8 @@
 									}
 								%>
 								</a></li>
+                         <li><a href="<%=request.getContextPath()%>/spam"><i class="fa fa-ban"></i> Spam Mail</a></li>
+								
 							</ul>
 						</div>
 					</section>
@@ -90,12 +92,13 @@
 									<div>
 										<% ArrayList<String> listFile = (ArrayList<String>) request.getAttribute("attachFile");
 										for(String file:listFile){
+											if(!file.equals("")){
 											%> 
 											<div class="attach-file">
 											<div class="type"></div>
 												<div class = "filename"><%=file%></div>
 											</div>
-										<%} 
+										<%} }
 										%>
 									</div>
 									<%

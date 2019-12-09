@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -103,7 +104,7 @@ public class DetailController extends HttpServlet {
                          String fileName = part.getFileName();
                          attachFiles += fileName + ", ";
                          CreateFolder.createFolderIfNotExists(CreateFolder.saveDirectory + "/");
-                         //part.saveFile(saveDirectory + File.separator + fileName);
+                         part.saveFile(CreateFolder.saveDirectory + File.separator + fileName);
                      } 
                  }
 

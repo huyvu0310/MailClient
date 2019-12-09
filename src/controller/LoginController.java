@@ -35,7 +35,7 @@ public class LoginController extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		if ("".equals(username) && "".equals(password)) {
-			request.setAttribute("msgErr", "Không để trống mục nào!!");
+			request.setAttribute("msgErr", "Can not be blank!!");
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/login.jsp");
 			rd.forward(request, response);
 			return;

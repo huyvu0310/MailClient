@@ -38,6 +38,8 @@
                             	<span class="label label-info pull-right inbox-notification"><%=numDrafts %></span>
                             	<%} %>
                             </a></li>
+                        <li><a href="<%=request.getContextPath()%>/spam"><i class="fa fa-ban"></i> Spam Mail</a></li>
+                            
                         </ul>
                     </div>
                 </section>
@@ -174,5 +176,5 @@
         <!-- page end-->
         </div>
 </section>
-<%-- <%@include file="inc/footer.jsp"%> --%>
-
+<%-- <%@include file="inc/footer.jsp"%> 
+ --%>

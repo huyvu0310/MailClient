@@ -30,7 +30,7 @@
                             	<%} %>
                             	</a>
                             </li>
-                            <li class="active"><a href="<%=request.getContextPath()%>/sent"> <i class="fa fa-envelope-o"></i> Sent Mail</a></li>
+                            <li><a href="<%=request.getContextPath()%>/sent"> <i class="fa fa-envelope-o"></i> Sent Mail</a></li>
                             <li><a href="<%=request.getContextPath()%>/draft"> <i class="fa fa-file-text-o"></i> Drafts 
                             	<%
                             		int numDrafts = (int) session.getAttribute("numDrafts");
@@ -40,8 +40,7 @@
                             	<%} %>
                             </a></li>
                             
-                            <li class="active"> Spam</li>
-                              <li class="active"><a href="#">  Spam Mail</a></li>
+                              <li class="active"><a href="#"><i class="fa fa-ban"></i> Spam Mail</a></li>
                         </ul>
                     </div>
                 </section>

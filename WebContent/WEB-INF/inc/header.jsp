@@ -27,6 +27,13 @@
 	<link href="${pageContext.request.contextPath}/templates/assets/css/jquery.datepick.css" rel="stylesheet">
 	<script src="${pageContext.request.contextPath}/templates/assets/js/jquery.plugin.min.js" type="text/javascript"></script>
 	<script src="${pageContext.request.contextPath}/templates/assets/js/jquery.datepick.js" type="text/javascript"></script>
+	<script src="<%=request.getContextPath()%>/templates/assets/js/bootstrap.js"></script>
+<script src="<%=request.getContextPath()%>/templates/assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="<%=request.getContextPath()%>/templates/assets/js/scripts.js"></script>
+<script src="<%=request.getContextPath()%>/templates/assets/js/jquery.slimscroll.js"></script>
+<script src="<%=request.getContextPath()%>/templates/assets/js/jquery.nicescroll.js"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+<script src="<%=request.getContextPath()%>/templates/assets/js/jquery.scrollTo.js"></script>
 </head>
 <body>
 	<section id="container">

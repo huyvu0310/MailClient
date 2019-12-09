@@ -88,11 +88,11 @@ public class ComposeController extends HttpServlet {
 		String bcc = request.getParameter("bcc");
 
 		if (SendMail.SendMailTLS(userLogin, to, cc, bcc, subject, content)) {
-			session.setAttribute("msg", "Gửi thành công!");
+			session.setAttribute("msg", "Sent email successfully!");
 			response.sendRedirect(request.getContextPath() + "/sent");
 			return;
 		} else {
-			request.setAttribute("msgErr", "Gửi thất bại!");
+			request.setAttribute("msgErr", "Send email failed!");
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/compose.jsp");
 			rd.forward(request, response);
 		}

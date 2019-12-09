@@ -38,6 +38,8 @@
                             	<span class="label label-info pull-right inbox-notification"><%=numDraft %></span>
                             	<%} %>
                             </a></li>
+                        <li><a href="<%=request.getContextPath()%>/spam"><i class="fa fa-ban"></i> Spam Mail</a></li>
+                            
                         </ul>
                     </div>
                 </section>
@@ -147,9 +149,11 @@
                         	for(MessageView msg: alMsg){
 						%>
 			          					<tr>
-				                            <td class="view-message  dont-show"  style="color:red; width:20%;"><a href="#">Draft</a></td>
+											<a href="<%=request.getContextPath()%>/compose?id=<%=msg.getId()%>">			                            
+											<td class="view-message  dont-show"  style="color:red; width:20%;"><a href="<%=request.getContextPath()%>/compose?id=<%=msg.getId()%>">Draft</a></td>
 				                            <td class="view-message " style="width:40%;"><a href="<%=request.getContextPath()%>/compose?id=<%=msg.getId()%>"><%=msg.getSubject()%></a></td>
 				                            <td class="view-message  text-right"><%=df.format(msg.getDate())%></td>
+				                            </a>	
 				                        </tr>
 	                    <%
 							}										
