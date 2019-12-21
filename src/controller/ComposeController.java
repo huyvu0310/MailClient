@@ -137,7 +137,7 @@ public class ComposeController extends HttpServlet {
 
 		System.out.println("ATACH: " + attachFile);
 		
-		if (SendMail.SendMailTLS(userLogin, to, cc, bcc, subject, content, "A")) {
+		if (SendMail.SendMailTLS(userLogin, to, cc, bcc, subject, content, attachFile)) {
 			session.setAttribute("msg", "Sent email successfully!");
 			response.sendRedirect(request.getContextPath() + "/sent");
 			return;
