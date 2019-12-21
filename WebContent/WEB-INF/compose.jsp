@@ -60,7 +60,7 @@
                     	<div style="color:red;">${msgErr}</div>
                        
                         <div class="compose-mail">
-                            <form role="form-horizontal" method="post" action="<%=request.getContextPath()%>/compose">
+                            <form role="form-horizontal" method="post" action="<%=request.getContextPath()%>/compose" enctype="multipart/form-data">
                                 <% if (request.getAttribute("msgSend")!=null) {
 									MessageView m = (MessageView)request.getAttribute("msgSend");                                
                                 %>
@@ -132,6 +132,10 @@
 
                                 <div class="compose-editor">
                                     <textarea class="wysihtml5 form-control" rows="9" name="content"></textarea>
+                                </div>
+                                <div>
+                                        <input type="file" name="file"  />
+                               
                                 </div>
                                 <%} %>
                                 <div class="compose-btn">

@@ -67,7 +67,7 @@ public class ReplyController extends HttpServlet {
 		String cc = request.getParameter("cc");
 		String bcc = request.getParameter("bcc");
 
-		if (SendMail.SendMailTLS(userLogin, to, cc, bcc, subject, content)) {
+		if (SendMail.SendMailTLS(userLogin, to, cc, bcc, subject, content, "")) {
 			session.setAttribute("msg", "Gửi thành công!");
 			response.sendRedirect(request.getContextPath() + "/sent");
 			return;

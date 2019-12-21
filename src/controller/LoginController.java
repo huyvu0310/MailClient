@@ -55,7 +55,7 @@ public class LoginController extends HttpServlet {
 			return;
 			
 		} catch (Exception e) {
-			session.setAttribute("userlogin", userLogin);
+			//session.setAttribute("userlogin", userLogin);
 			request.setAttribute("msgErr", "Sai username,password!!");
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/login.jsp");
 			rd.forward(request, response);

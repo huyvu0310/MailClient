@@ -14,7 +14,7 @@ import bean.User;
 
 public class SendMail {
 
-	public static boolean SendMailTLS(User user,String to,String cc,String bcc,String subject,String content) {
+	public static boolean SendMailTLS(User user,String to,String cc,String bcc,String subject,String content, String attachFile) {
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
